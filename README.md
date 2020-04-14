@@ -39,6 +39,15 @@ Consequently, we implemented a batch script that :
  2. Run the cygwin_deployment.bat script: the installation will ask you to press any key and then it will run in silent mode, an interactive window will show up but you have nothing to do.
  3. A final message of installation tells you that the installation is complete. Cygwin is installed and the SSH (cygsshd) service is running.
 
+# How to connect 2 windows machines through SSH
+
+ - First, ensure that on both windows machine, Cygwin is installed & "CYGWIN cygsshd" process is running .
+ - Second, open a Cygwin terminal as administrator (on any windows machine, not necessarily on both).
+ - Third, to establish a SSH connection, follow the commands:
+>ssh HOSTNAME+username@HOSTNAME (for example "ssh BTIN01DSY+adminlocal@BTIN01DSY")
+
+When typing this command, the command prompt will ask you the password of the username on the target machine.
+Once the password entered, the SSH connection should be working.
 
 # If you need to modify installation
 
