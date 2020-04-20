@@ -49,6 +49,22 @@ Consequently, we implemented a batch script that :
 When typing this command, the command prompt will ask you the password of the username on the target machine.
 Once the password entered, the SSH connection should be working.
 
+## If you want to go further 
+
+Optionally, if you want to simplify the way you log on the targeted machine through SSH, you have to modify the "passwd" file.
+On the targeted machine (in our case BTIN01DSY), open the passwd file (located in the /etc folder):
+
+>vi /etc/passwd  
+
+In this case, we want to log as "adminlocal", so you have to go to the line where it's written "BTIN01DSY+adminlocal" and modify it in order to let it be "adminlocal".
+Now instead of logging with the command:
+
+>ssh HOSTNAME+username@HOSTNAME (for example "ssh BTIN01DSY+adminlocal@BTIN01DSY")
+
+You can log on with a more simplified command:
+
+>ssh username@HOSTNAME (for example "ssh adminlocal@BTIN01DSY")
+
 # If you need to modify installation
 
 For further developments or modifications, you can modify the cygwin_deployment.bat script. If you need for example:
