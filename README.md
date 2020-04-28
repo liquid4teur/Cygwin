@@ -8,7 +8,7 @@ In order to answer this purpose, we decided to use Cygwin by installing it with 
 
 Consequently, we implemented a batch script that :
 - Download the cygwin executable (for 64-bit),
-- Install Cygwin with its core packages (C:\cygwin),
+- Install Cygwin executable with its core packages (C:\cygwin),
 - Install additional packages:
 	- openssh,
 	- openssl,
@@ -32,6 +32,7 @@ Consequently, we implemented a batch script that :
 - Create desktop shortcut,
 - Install & activate the cygsshd service for SSH communication
 
+I choosed to write this script into a batch script because in this case I need to execute a .EXE file and that could be launched directly from a Shell or Command Prompt.
 
 # How it works
 
