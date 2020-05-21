@@ -85,3 +85,29 @@ For further developments or modifications, you can modify the cygwin_deployment.
 >cygrunsrv --remove *nameoftheprocess*
 
 5. Once, all the process stopped and removed, you have to restart your machine. Then, you can remove the desktop shortcut and remove the cygwin folder (C:\cygwin by default in this script).
+
+# Resources 
+
+## GUI Installation
+
+- [Oracle Documentation for Installation](https://docs.oracle.com/cd/E24628_01/install.121/e22624/preinstall_req_cygwin_ssh.htm#EMBSC150)
+
+## Cygwin Project
+
+- [Cygwin Project](https://www.cygwin.com/)
+- [Cygwin Package List](https://cygwin.com/packages/package_list.html)
+- [Cygwin Commands](https://cygwin.com/cygwin-ug-net/cygcheck.html)
+- [Cygwin FAQ](https://cygwin.com/faq/faq.html#faq.setup.cli)
+
+## Other presentation
+
+- [MLV University](http://www-igm.univ-mlv.fr/~dr/XPOSE2001/tripault/html/utilisation.html)
+- [CECS](http://users.cecs.anu.edu.au/~xzhang/pubDoc/IT/SSH%20without%20password%20from%20Windows.htm)
+- [Wikipedia](https://fr.wikipedia.org/wiki/Cygwin)
+
+## Github resources & other scripts
+
+- [Cygwin installer](https://github.com/miguelgrinberg/cygwin-installer/blob/master/install-cygwin.bat)
+- [Cygwin script](https://github.com/stack72/packer-images/blob/master/windows/scripts/install-cygwin-sshd.bat)
+- [Cygwin Package Manager - APT-CYG](https://github.com/transcode-open/apt-cyg)
+- [Script to Install Cygwin on Windows](https://willhaley.com/blog/script-install-cygwin-windows/)
